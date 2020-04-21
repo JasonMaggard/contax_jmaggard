@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "6f49cf51-f8e0-41d2-80d1-cb7264601963",
+		"name": "SingleStone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert a contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"first\": \"Harold\",\r\n    \"middle\": \"Francis\",\r\n    \"last\": \"Gilkey\"\r\n  },\r\n  \"address\": {\r\n    \"street\": \"8360 High Autumn Row\",\r\n    \"city\": \"Cannon\",\r\n    \"state\": \"Delaware\",\r\n    \"zip\": \"19797\"\r\n  },\r\n  \"phone\": [\r\n    {\r\n      \"number\": \"302-611-9148\",\r\n      \"type\": \"home\"\r\n    },\r\n    {\r\n      \"number\": \"302-532-9427\",\r\n      \"type\": \"mobile\"\r\n    }\r\n  ],\r\n  \"email\": \"harold.gilkey@yahoo.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"first\": \"Harold\",\r\n    \"middle\": \"Francis\",\r\n    \"last\": \"Gilkey\r\n  },\r\n  \"address\": {\r\n    \"street\": \"8360 High Autumn Row\",\r\n    \"city\": \"Cannon\",\r\n    \"state\": \"Delaware\",\r\n    \"zip\": \"19797\"\r\n  },\r\n  \"phone\": [\r\n    {\r\n      \"number\": \"302-611-9148\",\r\n      \"type\": \"home\"\r\n    },\r\n    {\r\n      \"number\": \"302-532-9427\",\r\n      \"type\": \"mobile\"\r\n    }\r\n  ],\r\n  \"email\": \"harold.gilkey@yahoo.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contacts/QGBmBqbGIybMsi2e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contacts",
+						"QGBmBqbGIybMsi2e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contacts/qRHueWnmXsVGdozF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contacts",
+						"qRHueWnmXsVGdozF"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
